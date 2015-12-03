@@ -1,0 +1,95 @@
+body {
+  min-width: 800px;
+  width: 55%;
+  margin: 1% 3%;
+  font-family: Lato;
+  font-size: 1.25em;
+  background: #588c7e;
+  align-content:center;
+  align-items:center;
+}
+
+button {
+  padding: 7px 10px ;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 20px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 130px;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin:20px;
+}
+
+#main, #top, #hand-value, #overall-info, #payout-table, .player {
+  background-color:#d9c5ab;
+  padding:10px;
+  border: 1px solid black;
+  border-radius:10px;
+}
+
+#main, #top {
+  margin: 3% auto;
+}
+
+
+#main {
+  width:75%;
+  align-content:center;
+  text-align:center;
+}
+
+#top {
+  margin:auto;
+  width:50%;
+  padding:1%;
+  text-align:center;
+}
+
+table {
+  width:100%;
+  margin:0;
+}
+
+td {
+  width:15%;
+  margin:1%;
+  padding:2px;
+  border:5px solid black;
+  border-radius:5px;
+}
+
+td img {
+  width:100%;
+}
+
+.card {
+  background-color:red;
+  float:left;
+}
+
+#players {
+  margin:auto;
+  overflow:auto;
+}
+
+.player {
+  float:left;
+  margin-right:2%;
+  width:160px;
+  text-align:center;
+  border: 4px solid black;
+  padding:5px;
+}
+
+#players img {
+  margin:3px;
+  width:68px;
+}
+
+.selected {
+  border-color:yellow;
+}

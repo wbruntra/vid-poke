@@ -1,0 +1,140 @@
+/* FLIPPER CSS */
+
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.4s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+
+
+body {
+  width: 80%;
+  background-color: aqua;
+  font-size: 1.5em;
+}
+
+#full-table {
+  height: 800px;
+}
+
+#top,
+#middle,
+#bottom {
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+}
+
+#top, #center, #bottom {
+  vertical-align:middle;
+}
+
+#top {
+  height: 25%;
+  background-color: red;
+}
+
+#middle {
+  height: 50%;
+  background-color: gray;
+}
+
+#bottom {
+  height: 25%;
+  background-color: green;
+}
+
+#left,
+#right,
+#center {
+  height: 96%;
+}
+
+#left,
+#right {
+  margin: 1%;
+  width: 16%;
+  background-color: coral;
+  float: left;
+}
+
+#center {
+  width: 62%;
+  margin: 1%;
+  background-color: bisque;
+  float: left;
+}
+
+.player {
+  width: 20%;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+}
+
+#bottom, #top, #center {
+  position:relative;
+}
+
+#board {
+  position:absolute;
+  top: 30%;
+  left:15%;
+}
+
+#bottom .player, #top .player {
+  margin:0;
+  position:absolute;
+  top:20%;
+  left:40%;
+}
+
+td {}
+img {
+  width: 72px;
+}
+
+#board img {
+  width:100px;
+}

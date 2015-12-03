@@ -1,0 +1,53 @@
+<html><head>
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/animate.css">
+  <link rel="stylesheet" href="/css/style-poker.css">
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  </head>
+  <body>
+    <div id="top">
+      <h2>Video Poker</h2>
+    </div>
+    <div id="main">
+        <div id="board">
+          <div class="card rank-8 suit-s" id="c-0"><img src="/img/8_of_spades.png"></div>
+          <div class="card rank-A suit-d" id="c-1"><img src="/img/ace_of_diamonds.png"></div>
+          <div class="card rank-4 suit-h" id="c-2"><img src="/img/4_of_hearts.png"></div>
+          <div class="card rank-K suit-c" id="c-3"><img src="/img/K_of_clubs.png"></div>
+          <div class="card rank-6 suit-d" id="c-4"><img src="/img/6_of_diamonds.png"></div>
+        </div>
+    </div>
+    <div id="bottom-bar">
+      <div id="hand-value">
+        <div id="value-display">High card</div>
+        <div id="payoff-display"></div>
+      </div>
+      <div id="overall-info">
+        <div id="score-display">Credit: $<span id="score">10</span></div>
+        <div id="hands-played"></div>
+      </div>  
+      <div id="expectation-display">Expected payout: $<span id="expectation"></span></div>
+    </div>
+    <div id="controls">
+    <button id="redeal">Redeal!</button>
+    <button id="draw">Draw</button>
+      </div>
+    <div id="payout-table">
+      <h3>Payouts</h3>
+      <div id="payout-colOne">
+        <p>Royal Flush <span id="pays-9" class="payout">800</span></p>
+        <p>Straight Flush <span id="pays-8" class="payout">50</span></p>
+        <p>Four of a Kind<span id="pays-7" class="payout">25</span></p>
+        <p>Full House <span id="pays-6" class="payout">9</span></p>
+        <p>Flush<span id="pays-5" class="payout">7</span></p>
+      </div>
+      <div id="payout-colTwo">
+        <p>Straight<span id="pays-4" class="payout">4</span></p>
+        <p>Three of a Kind<span id="pays-3" class="payout">3</span></p>
+        <p>Two Pairs<span id="pays-2" class="payout">2</span></p>
+        <p>One Pair, J or Higher<span id="pays-1" class="payout">1</span></p>
+      </div>
+    </div>
+  
+<!--<script src="/js/videopoker.js"></script>-->
+</body></html>

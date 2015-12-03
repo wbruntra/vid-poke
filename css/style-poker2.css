@@ -1,0 +1,155 @@
+body {
+  min-width: 800px;
+  height:720px;
+  width: 55%;
+  margin: 1% 3%;
+  font-family: Lato;
+  font-size: 1.25em;
+  background: #588c7e;
+  align-content:center;
+  align-items:center;
+}
+
+#controls {
+  background-color:#aa1111;
+  margin: 3% auto;
+  width:50%;
+  border:1px solid black;
+  border-radius:10px;
+  text-align:center;
+}
+
+button {
+  padding: 7px 10px ;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 20px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 130px;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin:20px;
+}
+
+#main, #top, #hand-value, #overall-info, #payout-table {
+  background-color:#d9c5ab;
+  padding:10px;
+  border: 1px solid black;
+  border-radius:10px;
+}
+
+#main, #top {
+  width: 100%;
+  margin: 3% auto;
+}
+
+#main {
+  overflow:auto;
+  position:relative;
+}
+
+#top {
+  margin:auto;
+  width:50%;
+  padding:1%;
+  text-align:center;
+}
+
+#bottom-bar {
+  margin:auto;
+  width:80%;
+  overflow:auto;
+}
+
+#hand-value, #overall-info {
+  display:inline-block;
+  float:left;
+}
+
+#hand-value {
+  margin-left:4%;
+  width:55%;
+}
+
+#overall-info {
+  margin-left:20px;
+  width:25%;
+}
+
+#hand-value {
+  width:60%;
+}
+
+#value-display {
+  width:60%;
+  float:left;
+}
+
+#payoff-display {
+  width:20%;
+  float:right;
+}
+
+#expectation-display {
+  display:none;
+  margin-top:25px;
+}
+
+#board {
+  width:100%;
+  margin:0;
+}
+
+div.card {
+  width:14%;
+  border:5px solid black;
+  border-radius:5px;
+  display:inline-block;
+  background-color:red;
+  padding:8px;
+}
+
+img.back {
+  width:100%;
+}
+
+img.front {
+    position: absolute;
+    top:8px;
+}
+
+.card.selected {
+  border-color:yellow;
+}
+
+#payout-table {
+  overflow:auto;
+  width:70%;
+  margin:auto;
+  padding:0;
+}
+
+#payout-table h3 {
+  text-align:center;
+  text-decoration:underline;
+  margin:5px;
+}
+
+#payout-table p {
+  margin: 10px;
+}
+
+#payout-colOne, #payout-colTwo {
+  padding:2%;
+  font-size:1em;
+  width:45%;
+  float:left;
+}
+
+.payout {
+  float:right;
+  padding-right:2%;
+}
